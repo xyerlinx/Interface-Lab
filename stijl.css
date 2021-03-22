@@ -1,0 +1,227 @@
+body {
+    background-color: MistyRose;
+    padding: 2rem;
+  }
+
+h1 {
+  font-family: Lora;
+  font-size: 50xpx;
+}
+
+h2 {
+  font-family: Alice;
+}
+ p {
+   font-family: Montaga;
+   margin-bottom: 1rem;
+ }
+
+ div.afbeelding1, div.afbeelding2, div.afbeelding3  {
+      height: 60vw;
+      margin-bottom: 1rem;
+      position: relative;
+}
+
+div.afbeelding1 {
+  background-color: black;
+}
+
+.afbeelding1 .driehoek1 {
+      background-color: Yellow;
+      height: 30vw;
+      width: 30vw;
+      position: absolute;
+      top: 15vw;
+      right: 25vw;
+      clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.afbeelding1 .driehoek2 {
+      background-color: Yellow;
+      height: 30vw;
+      width: 30vw;
+      position: absolute;
+      top: 15vw;
+      right: 150px;
+      border-left: 50vw;
+      clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.afbeelding1 .driehoek3 {
+      background-color: Yellow;
+      height: 30vw;
+      width: 30vw;
+      position: absolute;
+      top: 15vw;
+      right: 25vw;
+      left: 375px;
+      clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.afbeelding1 .rond1 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: red;
+  right: 565px;
+  bottom: 650px;
+  border-radius: 50%
+}
+
+.afbeelding1 .rond2 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: red;
+  right: 330px;
+  bottom: 650px;
+  border-radius: 50%
+}
+
+.afbeelding1 .rond3 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: red;
+  right: 785px;
+  bottom: 650px;
+  border-radius: 50%
+}
+
+div.afbeelding2 {
+  background-color: MediumAquaMarine;
+}
+
+.bloemhoofd {
+  width: 280px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  top: 300px;
+  left: 610px;
+  background: #C71585;
+}
+
+.bloemhoofd::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #C71585;
+  border-radius: 50px;
+  width: 280px;
+  height: 100px;
+  transform: rotate(60deg);
+}
+
+.bloemhoofd::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #C71585;
+  border-radius: 50px;
+  width: 280px;
+  height: 100px;
+  transform: rotate(-60deg);
+}
+
+.bloemstem {
+  position: absolute;
+  height: 350px;
+  width: 20px;
+  background: green;
+  border-radius: 10px;
+  top: 450px;
+  left: 52%;
+  transform: translateX(-50%);
+}
+
+
+.bloemblad {
+  width: 60px;
+  height: 60px;
+  background: green;
+  position: absolute;
+  top: 550px;
+  left: 675px;
+  border-radius: 50px;
+  border-top-right-radius: 0;
+}
+
+div.afbeelding3 {
+  background-color: pink;
+}
+.oogwit {
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  top: 395px;
+  left: 675px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.heart {
+    position: absolute;
+    width: 150px;
+    height: 140px
+    top: 700px;
+    left: 725px;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 420px;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+div.eyelash2 {
+  transform: rotate(20deg);
+}
+div.eyelash3 {
+  transform: rotate(-20deg);
+}
+.eyelash {
+position: relative;
+height: 50px;
+width: 5px;
+background: black;
+border-radius: 10px;
+top: 340px;
+left: 775px;
+transform: translateX(-50%);
+}
+
+.eyelash2 {
+position: absolute;
+height: 50px;
+width: 5px;
+background: black;
+border-radius: 10px;
+top: 355px;
+left: 850px;
+transform: translateX(-50%);
+}
+
+.eyelash3 {
+position: absolute;
+height: 50px;
+width: 5px;
+background: black;
+border-radius: 10px;
+top: 355px;
+left: 700px;
+transform: translateX(-50%);
+}
