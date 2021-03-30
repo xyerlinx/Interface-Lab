@@ -1,227 +1,214 @@
 body {
-    background-color: MistyRose;
-    padding: 2rem;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+main {
+          width: 60vw;
+          height: 40vw;
+          background-color: DarkTurquoise;
+          border: 2vh solid black;
+          position: relative;}
+
+.vierkantje {
+  width: 40%;
+  height: 50%;
+  background-color: black;
+  clip-path: polygon(0 40%, 20% 0, 40% 40%);
+  position: absolute;
+  left: -1%;
+  top: 81%;}
+
+.vierkantje2 {
+width: 40%;
+height: 50%;
+background-color: black;
+clip-path: polygon(0 0%, 40% 0, 20% 40%);
+position: absolute;
+left: -1%;
+top: -1%;}
+
+
+.cirkel {
+  width: 60vw;
+  height: 40vw;
+  background:radial-gradient(circle, Coral, Coral 11%, black, black 12%, transparent 12%);
+  position: absolute;
+}
+
+p {
+  background-color: black;
+  height: 41vw;
+  width: 1vw;
+  position: absolute;
+  top: -5%;
+  left: 14%;
+}
+
+p:nth-child(1){
+  background-color: black;
+  height: 41vw;
+  width: 1vw;
+  position: absolute;
+  top: -5%;
+  left: 26%;
+}
+
+p:nth-child(2){
+  background-color: lightpink;
+  height: 40vw;
+  width: 7.2vw;
+  position: absolute;
+  top: -2.5%;
+  left: 14%;
+}
+
+p:nth-child(3){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 2%;
+  left: 17%;
+  transform: rotate(-15deg);
+}
+
+p:nth-child(4){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 12%;
+  left: 19.5%;
+  transform: rotate(45deg);
+}
+
+p:nth-child(5){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 26%;
+  left: 19%;
+  transform: rotate(90deg);
+}
+
+p:nth-child(6){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 37%;
+  left: 17%;
+  transform: rotate(24deg);
+}
+
+p:nth-child(7){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 20.2%;
+  transform: rotate(160deg);
+}
+
+p:nth-child(8){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 62%;
+  left: 17.2%;
+  transform: rotate(-85deg);
+}
+
+p:nth-child(9){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 76%;
+  left: 19.5%;
+  transform: rotate(15deg);
+}
+
+p:nth-child(10){
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 90%;
+  left: 18.5%;
+  transform: rotate(-30deg);
+}
+
+p:nth-child(11){
+  background-color: black;
+  height: 1vw;
+  width: 45vw;
+  position: absolute;
+  top: 22.5%;
+  left: 26%;
+}
+
+p:nth-child(12){
+  background-color: black;
+  height: 10vw;
+  width: 43.4vw;
+  position: absolute;
+  top: -2.5%;
+  left: 27.7%;
+  background-color: #ffffff;
+opacity: 1;
+background-image: repeating-linear-gradient(45deg, #847bff 25%, transparent 25%, transparent 75%, #847bff 75%, #847bff), repeating-linear-gradient(45deg, #847bff 25%, #ffffff 25%, #ffffff 75%, #847bff 75%, #847bff);
+background-position: 0 0, 40px 40px;
+background-size: 80px 80px;
+}
+
+p:nth-child(13){
+  background-color: black;
+  height: 1vw;
+  width: 28vw;
+  position: absolute;
+  top:70%;
+  left: 26%;
+}
+
+p:nth-child(14){
+  background-color: black;
+  height: 30vw;
+  width: 1vw;
+  position: absolute;
+  top: 22.5%;
+  left: 72.5%;
+}
+
+.rechthoek {
+  width: 16.3vw;
+  height: 30vw;
+  position: absolute;
+  top: 25%;
+  left: 73%;
+  background: repeating-linear-gradient(135deg, lightpink, lightpink 4rem, coral 4rem, coral 8rem);
+}
+
+.rechthoek2 {
+  width: 28vw;
+  height: 10vw;
+  position: absolute;
+  top: 75%;
+  left: 27%;
+  background: repeating-linear-gradient(90deg,#847BFF, #847BFF 1rem, lightpink 1rem, lightpink 2rem);
   }
 
-h1 {
-  font-family: Lora;
-  font-size: 50xpx;
-}
-
-h2 {
-  font-family: Alice;
-}
- p {
-   font-family: Montaga;
-   margin-bottom: 1rem;
- }
-
- div.afbeelding1, div.afbeelding2, div.afbeelding3  {
-      height: 60vw;
-      margin-bottom: 1rem;
-      position: relative;
-}
-
-div.afbeelding1 {
-  background-color: black;
-}
-
-.afbeelding1 .driehoek1 {
-      background-color: Yellow;
-      height: 30vw;
-      width: 30vw;
-      position: absolute;
-      top: 15vw;
-      right: 25vw;
-      clip-path: polygon(0 100%, 50% 0, 100% 100%);
-}
-
-.afbeelding1 .driehoek2 {
-      background-color: Yellow;
-      height: 30vw;
-      width: 30vw;
-      position: absolute;
-      top: 15vw;
-      right: 150px;
-      border-left: 50vw;
-      clip-path: polygon(0 100%, 50% 0, 100% 100%);
-}
-
-.afbeelding1 .driehoek3 {
-      background-color: Yellow;
-      height: 30vw;
-      width: 30vw;
-      position: absolute;
-      top: 15vw;
-      right: 25vw;
-      left: 375px;
-      clip-path: polygon(0 100%, 50% 0, 100% 100%);
-}
-
-.afbeelding1 .rond1 {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  background: red;
-  right: 565px;
-  bottom: 650px;
-  border-radius: 50%
-}
-
-.afbeelding1 .rond2 {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  background: red;
-  right: 330px;
-  bottom: 650px;
-  border-radius: 50%
-}
-
-.afbeelding1 .rond3 {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  background: red;
-  right: 785px;
-  bottom: 650px;
-  border-radius: 50%
-}
-
-div.afbeelding2 {
-  background-color: MediumAquaMarine;
-}
-
-.bloemhoofd {
-  width: 280px;
-  height: 100px;
-  border-radius: 50px;
-  position: absolute;
-  top: 300px;
-  left: 610px;
-  background: #C71585;
-}
-
-.bloemhoofd::before {
-  content: '';
-  display: block;
-  position: absolute;
-  background: #C71585;
-  border-radius: 50px;
-  width: 280px;
-  height: 100px;
-  transform: rotate(60deg);
-}
-
-.bloemhoofd::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background: #C71585;
-  border-radius: 50px;
-  width: 280px;
-  height: 100px;
-  transform: rotate(-60deg);
-}
-
-.bloemstem {
-  position: absolute;
-  height: 350px;
-  width: 20px;
-  background: green;
-  border-radius: 10px;
-  top: 450px;
-  left: 52%;
-  transform: translateX(-50%);
-}
-
-
-.bloemblad {
-  width: 60px;
-  height: 60px;
-  background: green;
-  position: absolute;
-  top: 550px;
-  left: 675px;
-  border-radius: 50px;
-  border-top-right-radius: 0;
-}
-
-div.afbeelding3 {
-  background-color: pink;
-}
-.oogwit {
-  width: 200px;
-  height: 120px;
-  position: absolute;
-  top: 395px;
-  left: 675px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.heart {
+  .rechthoek3 {
+    width: 28vw;
+    height: 10vw;
     position: absolute;
-    width: 150px;
-    height: 140px
-    top: 700px;
-    left: 725px;
-}
-
-.heart:before, .heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
-    top: 420px;
-    width: 50px;
-    height: 80px;
-    background: red;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-}
-
-.heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin :100% 100%;
-}
-
-div.eyelash2 {
-  transform: rotate(20deg);
-}
-div.eyelash3 {
-  transform: rotate(-20deg);
-}
-.eyelash {
-position: relative;
-height: 50px;
-width: 5px;
-background: black;
-border-radius: 10px;
-top: 340px;
-left: 775px;
-transform: translateX(-50%);
-}
-
-.eyelash2 {
-position: absolute;
-height: 50px;
-width: 5px;
-background: black;
-border-radius: 10px;
-top: 355px;
-left: 850px;
-transform: translateX(-50%);
-}
-
-.eyelash3 {
-position: absolute;
-height: 50px;
-width: 5px;
-background: black;
-border-radius: 10px;
-top: 355px;
-left: 700px;
-transform: translateX(-50%);
-}
+    top: 76%;
+    left: 26.5%;
+    background: repeating-linear-gradient(180deg, transparent, transparent 1rem, black 1rem, black 2rem);
+    }
